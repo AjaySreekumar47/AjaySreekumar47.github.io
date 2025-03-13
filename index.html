@@ -6,6 +6,7 @@
     <title>Ajay Sreekumar - Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
+        /* Existing styles */
         .card-img-top {
             width: 100%;
             height: 200px;
@@ -41,8 +42,72 @@
             background-color: #f9f9f9;
             border-radius: 5px;
         }
+
+        /* New styles for Contact Section */
+        .contact-section {
+            padding: 40px 0;
+            background-color: #f9f9f9;  /* Light background color */
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;  /* Two items per row */
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);  /* Hover lift effect */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);  /* Increased shadow on hover */
+        }
+
+        .contact-item .icon {
+            font-size: 1.8em;
+            margin-right: 15px;
+            color: #007bff;  /* Icon color */
+        }
+
+        .contact-item a {
+            font-size: 1.1em;
+            color: #007bff;  /* Link color */
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;  /* Underline on hover */
+        }
+
+        /* Responsive for mobile */
+        @media (max-width: 600px) {
+            .contact-info {
+                grid-template-columns: 1fr;  /* Stack items on small screens */
+            }
+        }
+
     </style>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -374,12 +439,24 @@
         });
     </script>
 
-    <section id="contact" class="container my-5">
-        <h2>Contact</h2>
-        <p><span>✉️</span> <a href="mailto:ajaysreekumar.nmims@gmail.com">ajaysreekumar.nmims@gmail.com</a></p>
-        <p><span>💼</span> <a href="https://www.linkedin.com/in/ajay-sreekumar-nmims/" target="_blank">Ajay Sreekumar</a></p>
-        <p><span>🐱</span> <a href="https://github.com/AjaySreekumar47" target="_blank">AjaySreekumar47</a></p>
-    </section>
+    <section id="contact" class="contact-section container my-5">
+  	<h2>Contact</h2>
+	  <div class="contact-info">
+	    <div class="contact-item">
+	      <span class="icon">✉️</span>
+	      <a href="mailto:ajaysreekumar.nmims@gmail.com">ajaysreekumar.nmims@gmail.com</a>
+	    </div>
+	    <div class="contact-item">
+	      <span class="icon">💼</span>
+	      <a href="https://www.linkedin.com/in/ajay-sreekumar-nmims/" target="_blank">Ajay Sreekumar</a>
+	    </div>
+	    <div class="contact-item">
+	      <span class="icon">🐱</span>
+	      <a href="https://github.com/AjaySreekumar47" target="_blank">AjaySreekumar47</a>
+	    </div>
+	  </div>
+	</section>
+
 
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2025 Ajay Sreekumar. All rights reserved.</p>
