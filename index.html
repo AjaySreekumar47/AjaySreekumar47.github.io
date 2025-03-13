@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
 
+	/* Styling for clickable words */
+	    header p a.link {
+	        text-decoration: none;
+	        color: #3498db; /* Blue color for links */
+	        font-weight: bold;
+	        transition: color 0.3s ease;
+	    }
+
+	    header p a.link:hover {
+	        color: #2980b9; /* Darker blue on hover */
+	    }
+
 	/* Background for the header */
 	    header {
 	        background-color: #2C3E50; /* Dark blue background */
@@ -165,10 +177,17 @@
         </div>
     </nav>
     
-    <header class="bg-primary text-white text-center py-5">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Data Science | Analysis | Engineering</p>
-    </header>
+	<header>
+	    <h1>Ajay Sreekumar</h1>
+	    <div class="divider"></div>
+	    <p>
+	        Welcome to My Portfolio - 
+	        <a href="#data-science" class="link">Data Science</a> | 
+	        <a href="#data-analytics" class="link">Data Analytics</a> | 
+	        <a href="#data-engineering" class="link">Data Engineering</a>
+	    </p>
+	</header>
+
 
     <section id="about" class="container my-5">
         <h2>About Me</h2>
@@ -189,7 +208,7 @@
     <section id="projects" class="container my-5">
         <h2>Projects</h2>
         
-        <button class="collapsible">Data Science & Machine Learning Projects</button>
+        <button class="collapsible"> onclick="location.href='#data-science'"Data Science & Machine Learning Projects</button>
         <div class="content">
             <div class="row">
 
@@ -378,7 +397,7 @@
             </div>
         </div>
         
-        <button class="collapsible">Data Analytics & Visualization Projects</button>
+        <button class="collapsible" onclick="location.href='#data-analytics'">Data Analytics & Visualization Projects</button>
         <div class="content">
             <div class="row">
                 <div class="col-md-6">
@@ -452,7 +471,7 @@
             </div>
         </div>
         
-        <button class="collapsible">Data Engineering Projects</button>
+        <button class="collapsible" onclick="location.href='#data-engineering'">Data Engineering Projects</button>
         <div class="content">
             <div class="row">
                 <div class="col-md-6">
