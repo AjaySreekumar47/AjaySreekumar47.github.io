@@ -57,6 +57,17 @@
 	        color: #3498db;
 	        cursor: pointer;
 	    }
+
+	/* About Section */
+	#about .card {
+	    border-radius: 10px;
+	    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+	    transition: transform 0.3s ease-in-out;
+	}
+
+	#about .card:hover {
+	    transform: translateY(-10px);
+	}
 	
         /* Existing styles */
         .card-img-top {
@@ -200,8 +211,27 @@
 
 
     <section id="about" class="container my-5">
-        <h2>About Me</h2>
-        <p>I am a passionate data scientist and engineer who loves turning data into insights and actionable solutions. With expertise in machine learning, big data technologies, and data engineering, I aim to solve real-world challenges through innovative data-driven approaches.</p>
+    <h2 class="text-center mb-4">About Me</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Who am I?</h5>
+                    <p class="card-text">
+                        Hi, I'm Ajay Sreekumar, a passionate data scientist with a focus on machine learning, data analysis, and engineering. 
+                        I love solving complex problems and turning data into actionable insights. I have experience with various tools 
+                        like Python, SQL, and deep learning frameworks such as TensorFlow and PyTorch.
+                    </p>
+                    <p class="card-text">
+                        When I'm not working on data-driven projects, you can find me exploring new technologies or experimenting with 
+                        new ways to improve the way data is used in everyday life.
+                    </p>
+                    <a href="#projects" class="btn btn-primary w-100">See My Work</a>
+                </div>
+            </div>
+        </div>
+	</section>
+
         <h3>Skills & Technologies</h3>
         <ul>
             <li><strong>Technical Skills:</strong> R, Python, Microsoft Excel, Java</li>
