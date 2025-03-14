@@ -298,11 +298,6 @@
         <div class="card-body d-flex flex-column">
             <h5 class="card-title text-center mb-4">Work Experience</h5>
             <div id="workExperienceCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators" style="bottom: -15px;">
-                    <button type="button" data-bs-target="#workExperienceCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#workExperienceCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#workExperienceCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="job text-center p-3">
@@ -326,14 +321,23 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#workExperienceCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#workExperienceCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                
+                <!-- Custom navigation controls at the bottom -->
+                <div class="d-flex justify-content-center mt-3">
+                    <button class="btn btn-sm btn-outline-secondary mx-1" type="button" data-bs-target="#workExperienceCarousel" data-bs-slide="prev">
+                        <span>←</span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <div class="carousel-indicators position-relative mx-2" style="margin: 0;">
+                        <button type="button" data-bs-target="#workExperienceCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#workExperienceCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#workExperienceCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <button class="btn btn-sm btn-outline-secondary mx-1" type="button" data-bs-target="#workExperienceCarousel" data-bs-slide="next">
+                        <span>→</span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
