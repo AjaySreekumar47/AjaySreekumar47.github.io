@@ -298,6 +298,13 @@
         <div class="card-body d-flex flex-column">
             <h5 class="card-title text-center mb-4">Work Experience</h5>
             <div id="workExperienceCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Remove default controls with CSS override -->
+                <style>
+                    #workExperienceCarousel .carousel-control-prev,
+                    #workExperienceCarousel .carousel-control-next {
+                        display: none !important;
+                    }
+                </style>
                 <div class="carousel-inner">
                     <div class="carousel-item">
                         <div class="job text-center p-3">
