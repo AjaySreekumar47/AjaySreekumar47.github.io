@@ -53,8 +53,7 @@ const Hero = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a 
-              href="/resume.pdf" 
-              target="_blank" 
+              href="/lovable-uploads/Ajay_Sreekumar_Resume.pdf"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm font-medium hover:text-data-blue transition-colors"
             >
