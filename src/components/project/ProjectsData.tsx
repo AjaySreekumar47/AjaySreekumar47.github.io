@@ -24,11 +24,11 @@ Key Contributions:
 
 Impact:
 This project demonstrates how tailored LLM architectures and optimized pipelines can be integrated into developer workflows, significantly advancing productivity, accuracy, and real-time usability in mission-critical environments like aerospace and defense.`,
-    imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://uala-agent.github.io/static/images/uala_framework.png",
     tags: ["Machine Learning", "LLM", "RAG", "NLP"],
     achievements: ["90% increase in code generation accuracy", "80% reduction in inference latency", "30+ hours saved per month"],
-    githubUrl: "https://github.com/username/ai-copilot",
-    demoUrl: "https://ai-copilot.demo",
+    githubUrl: "https://github.com/AjaySreekumar47/OML-Copilot",
+    demoUrl: "https://colab.research.google.com/drive/1yEh3t6-C3XvQSfJzBXCoco59BYSHuAZo",
     technologies: ["LangChain", "PyTorch", "Sentence Transformers", "VS Code Extension API", "Pydantic", "Lark"],
     featured: true,
     organization: "University of Arizona | NASA JPL | BAE Systems",
@@ -61,7 +61,7 @@ This internship showcased how domain-aligned LLMs, reinforcement learning, and v
     imageUrl: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80",
     tags: ["LLMOps", "Scientific Computing", "Uncertainty Quantification", "Computer Vision"],
     achievements: ["30-42% improved code translation", "20% better time-series forecasting", "Published paper at AISD NAACL 2025"],
-    githubUrl: "https://github.com/username/lanl-llmops",
+    githubUrl: "https://github.com/AjaySreekumar47/uncertainty-quantification-for-code-translation",
     technologies: ["Python", "PyTorch", "TensorFlow", "Vision Transformers", "Reinforcement Learning", "SQL"],
     featured: true,
     organization: "Los Alamos National Laboratory",
