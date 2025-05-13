@@ -16,7 +16,11 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
+<<<<<<< HEAD
                 href="https://github.com/yourusername" 
+=======
+                href="https://github.com/AjaySreekumar47" 
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-white/80 hover:text-white transition-colors"
@@ -25,7 +29,11 @@ const Footer = () => {
                 <Github className="h-5 w-5" />
               </a>
               <a 
+<<<<<<< HEAD
                 href="https://linkedin.com/in/yourusername" 
+=======
+                href="https://www.linkedin.com/in/ajay-sreekumar-nmims/" 
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-white/80 hover:text-white transition-colors"
@@ -59,6 +67,12 @@ const Footer = () => {
             <p className="text-white/80 mb-2">
               Email: <a href="mailto:ajaysreekumar.nmims@gmail.com" className="hover:underline">ajaysreekumar.nmims@gmail.com</a>
             </p>
+<<<<<<< HEAD
+=======
+            <p className="text-white/80 mb-2">
+              Phone: <a href="tel:+17758306747" className="hover:underline">+1-(775)-830-6747</a>
+            </p>
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
             <p className="text-white/80 mb-4">
               Location: Arizona, USA
             </p>

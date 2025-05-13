@@ -73,7 +73,16 @@ const Contact = () => {
                 <Phone className="mr-4 h-6 w-6 text-data-blue" />
                 <div>
                   <h4 className="font-medium">Phone</h4>
+<<<<<<< HEAD
                   <p className="text-muted-foreground">Available upon request</p>
+=======
+                  <a 
+                    href="tel:+17758306747"
+                    className="text-muted-foreground hover:text-data-blue transition-colors"
+                  >
+                    +1-(775)-830-6747
+                  </a>
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
                 </div>
               </div>
               
@@ -86,7 +95,11 @@ const Contact = () => {
               </div>
             </div>
             
+<<<<<<< HEAD
             <div className="mt-8 p-4 bg-data-light rounded-lg border border-data-blue/10">
+=======
+            <div className="mt-8 p-4 bg-secondary/50 rounded-lg border border-border">
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
               <h4 className="font-medium mb-2">Preferred Contact Method</h4>
               <p className="text-sm text-muted-foreground">
                 Email is the best way to reach me. I typically respond within 24-48 hours.
@@ -95,7 +108,11 @@ const Contact = () => {
           </div>
           
           {/* Contact Form */}
+<<<<<<< HEAD
           <div className="bg-white p-6 rounded-lg border border-border shadow-sm">
+=======
+          <div className="bg-card p-6 rounded-lg border border-border shadow-sm">
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
             <h3 className="text-xl font-bold mb-6">Send Me a Message</h3>
             
             <form onSubmit={handleSubmit} className="space-y-4">

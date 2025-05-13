@@ -18,6 +18,65 @@ interface Repository {
   forks_count: number;
 }
 
+<<<<<<< HEAD
+=======
+// Images for different project types based on keywords/languages
+const getProjectImage = (repo: Repository): string => {
+  const name = repo.name.toLowerCase();
+  const desc = (repo.description || "").toLowerCase();
+  const langs = (repo.language || "").toLowerCase();
+  const topics = repo.topics.map(t => t.toLowerCase());
+  
+  // Data science/ML projects
+  if (
+    topics.some(t => ['machine-learning', 'ml', 'ai', 'data-science', 'pytorch', 'tensorflow'].includes(t)) || 
+    name.includes('ml') || name.includes('ai') || desc.includes('machine learning') || desc.includes('neural')
+  ) {
+    return "https://images.unsplash.com/photo-1555952494-efd681c7e3f9?auto=format&fit=crop&q=80";
+  }
+  
+  // Python projects
+  else if (langs === 'python' || name.includes('py') || topics.includes('python')) {
+    return "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&q=80";
+  }
+  
+  // Web/Frontend projects
+  else if (
+    langs === 'javascript' || langs === 'typescript' || langs === 'html' || 
+    topics.some(t => ['react', 'vue', 'angular', 'web', 'frontend'].includes(t))
+  ) {
+    return "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80";
+  }
+  
+  // Data analysis/visualization
+  else if (
+    name.includes('data') || desc.includes('data') || desc.includes('analysis') || 
+    topics.some(t => ['data-analysis', 'visualization', 'tableau', 'analytics'].includes(t))
+  ) {
+    return "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80";
+  }
+  
+  // Mobile/App development
+  else if (
+    topics.some(t => ['android', 'ios', 'mobile', 'app'].includes(t)) ||
+    name.includes('app') || desc.includes('mobile')
+  ) {
+    return "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&q=80";
+  }
+  
+  // Backend/server
+  else if (
+    langs === 'java' || langs === 'c#' || langs === 'go' ||
+    topics.some(t => ['backend', 'server', 'api', 'database'].includes(t))
+  ) {
+    return "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80";
+  }
+  
+  // Default image for other projects
+  return "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80";
+};
+
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
 const ProjectsPage = () => {
   const [repositories, setRepositories] = useState<Repository[]>([]);
   const [loading, setLoading] = useState(true);
@@ -67,6 +126,10 @@ const ProjectsPage = () => {
     githubUrl: repo.html_url,
     demoUrl: repo.homepage || undefined,
     technologies: repo.language ? [repo.language] : ['Various'],
+<<<<<<< HEAD
+=======
+    imageUrl: getProjectImage(repo), // Add image based on project type
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
   });
 
   // Generate array of page numbers for pagination
@@ -77,9 +140,15 @@ const ProjectsPage = () => {
 
   return (
     <div className="min-h-screen">
+<<<<<<< HEAD
       <header className="fixed top-0 left-0 w-full bg-white/80 shadow-sm backdrop-blur-md py-3 z-50">
         <div className="container flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 text-data-navy hover:text-data-blue transition-colors">
+=======
+      <header className="fixed top-0 left-0 w-full bg-white/80 dark:bg-background/80 shadow-sm backdrop-blur-md py-3 z-50">
+        <div className="container flex items-center justify-between">
+          <Link to="/" className="flex items-center gap-2 text-black dark:text-white hover:text-data-blue dark:hover:text-data-blue transition-colors">
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
             <ArrowLeft className="w-5 h-5" />
             <span>Back to Home</span>
           </Link>
@@ -94,18 +163,30 @@ const ProjectsPage = () => {
       </header>
       
       <main className="container pt-24 pb-16">
+<<<<<<< HEAD
         <h1 className="text-3xl md:text-4xl font-bold mb-2">My GitHub Projects</h1>
         <p className="text-muted-foreground mb-8 max-w-3xl">
+=======
+        <h1 className="text-3xl md:text-4xl font-bold mb-2 text-black dark:text-white">My GitHub Projects</h1>
+        <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-3xl">
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
           Explore all my projects from GitHub, showcasing my work in machine learning, data science, and software development.
         </p>
         
         {loading ? (
           <div className="flex flex-col items-center justify-center min-h-[300px]">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-data-blue"></div>
+<<<<<<< HEAD
             <p className="mt-4 text-muted-foreground">Loading projects...</p>
           </div>
         ) : error ? (
           <div className="bg-red-50 border border-red-200 text-red-700 p-4 rounded-md">
+=======
+            <p className="mt-4 text-gray-600 dark:text-gray-300">Loading projects...</p>
+          </div>
+        ) : error ? (
+          <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 p-4 rounded-md">
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
             <p className="font-medium">Error loading projects</p>
             <p className="text-sm mt-1">{error}</p>
           </div>

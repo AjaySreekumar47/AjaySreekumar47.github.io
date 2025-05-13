@@ -3,7 +3,7 @@ import { Project } from "./ProjectCard";
 
 export const projects: Project[] = [
   {
-    title: "🚀 AI Copilot for Code Generation",
+    title: "🚀 AI-Driven Co-Pilot for OML: Revolutionizing Systems Engineering at NASA JPL",
     description: "Developed an AI-driven coding Copilot using open-source LLMs and the LangChain framework, improving code generation accuracy by 90% and reducing inference latency by 80%.",
     shortDescription: "Developed an AI-driven coding Copilot using open-source LLMs and the LangChain framework, improving code generation accuracy by 90% and reducing inference latency by 80%. Leveraged advanced NLP techniques, retrieval-augmented generation (RAG), and custom VS Code tooling to enhance developer productivity and model performance.",
     fullDescription: `As a Machine Learning Researcher at the University of Arizona in collaboration with NASA Jet Propulsion Laboratory and BAE Systems, I spearheaded the development of an AI-powered coding Copilot that significantly enhances developer productivity and code quality using open-source large language models.
@@ -24,18 +24,18 @@ Key Contributions:
 
 Impact:
 This project demonstrates how tailored LLM architectures and optimized pipelines can be integrated into developer workflows, significantly advancing productivity, accuracy, and real-time usability in mission-critical environments like aerospace and defense.`,
-    imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://www.weetechsolution.com/wp-content/uploads/2023/04/How-to-use-GitHub-Copilot-in-VSCode.jpg",
     tags: ["Machine Learning", "LLM", "RAG", "NLP"],
     achievements: ["90% increase in code generation accuracy", "80% reduction in inference latency", "30+ hours saved per month"],
-    githubUrl: "https://github.com/username/ai-copilot",
-    demoUrl: "https://ai-copilot.demo",
+    githubUrl: "https://github.com/AjaySreekumar47/OML-Copilot",
+    demoUrl: "https://colab.research.google.com/drive/1yEh3t6-C3XvQSfJzBXCoco59BYSHuAZo",
     technologies: ["LangChain", "PyTorch", "Sentence Transformers", "VS Code Extension API", "Pydantic", "Lark"],
     featured: true,
     organization: "University of Arizona | NASA JPL | BAE Systems",
     period: "Jan 2025 – Present",
   },
   {
-    title: "🔬 LLMOps & Scientific Modeling Research",
+    title: "🔬 From LLMs to Vision Transformers: Enhancing Code Generation and Multi-Modal Time Series Predictions with Advanced Models",
     description: "Built uncertainty quantification techniques and multi-modal foundation models to enhance code translation and scientific data processing.",
     shortDescription: "Built uncertainty quantification techniques and multi-modal foundation models to enhance code translation and scientific data processing. Improved Fortran-to-C++ translation accuracy by 30–42% and boosted time-series forecasting by 20% using Vision Transformers and ML evaluation frameworks.",
     fullDescription: `As a Data Science Research Intern at Los Alamos National Laboratory, I contributed to advancing large language model operations (LLMOps) and scientific data understanding by designing high-precision modeling tools and evaluation frameworks.
@@ -58,10 +58,10 @@ Key Contributions:
 
 Impact:
 This internship showcased how domain-aligned LLMs, reinforcement learning, and visual analytics can be combined to enhance scientific computation and legacy code translation at scale.`,
-    imageUrl: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://uala-agent.github.io/static/images/uala_framework.png",
     tags: ["LLMOps", "Scientific Computing", "Uncertainty Quantification", "Computer Vision"],
     achievements: ["30-42% improved code translation", "20% better time-series forecasting", "Published paper at AISD NAACL 2025"],
-    githubUrl: "https://github.com/username/lanl-llmops",
+    githubUrl: "https://github.com/AjaySreekumar47/uncertainty-quantification-for-code-translation",
     technologies: ["Python", "PyTorch", "TensorFlow", "Vision Transformers", "Reinforcement Learning", "SQL"],
     featured: true,
     organization: "Los Alamos National Laboratory",

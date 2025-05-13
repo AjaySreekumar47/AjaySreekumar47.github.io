@@ -19,6 +19,7 @@ const Hero = () => {
             Ajay Sreekumar
           </h1>
           <h2 className="text-2xl md:text-3xl text-foreground/80 font-medium mb-6 animate-slide-from-left" style={{ animationDelay: "0.1s" }}>
+<<<<<<< HEAD
             Data Scientist & Machine Learning Engineer
           </h2>
           
@@ -27,6 +28,12 @@ const Hero = () => {
             <span className="highlight"> LLMOps</span>, and <span className="highlight">Predictive Analytics</span>. 
             Master's in Data Science from University of Arizona with a perfect 4.0 GPA.
           </p>
+=======
+            Data Scientist with Expertise in Machine Learning, NLP, LLMOps, and Predictive Analytics | Master's in Data Science (4.0 GPA), University of Arizona
+          </h2>
+          
+          {/* Removed the paragraph with duplicate information */}
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
           
           <div className="flex flex-wrap justify-center gap-4 mb-10 animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <Button asChild className="animate-bounce hover:animate-none">
@@ -39,7 +46,11 @@ const Hero = () => {
           
           <div className="flex items-center justify-center gap-5 animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <a 
+<<<<<<< HEAD
               href="https://github.com/yourusername" 
+=======
+              href="https://github.com/AjaySreekumar47" 
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
               target="_blank" 
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-secondary hover:bg-secondary/80 transition-all hover:scale-110"
@@ -48,7 +59,11 @@ const Hero = () => {
               <Github className="h-5 w-5" />
             </a>
             <a 
+<<<<<<< HEAD
               href="https://linkedin.com/in/yourusername" 
+=======
+              href="https://www.linkedin.com/in/ajay-sreekumar-nmims/" 
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
               target="_blank" 
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-secondary hover:bg-secondary/80 transition-all hover:scale-110"
@@ -57,8 +72,12 @@ const Hero = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a 
+<<<<<<< HEAD
               href="/resume.pdf" 
               target="_blank" 
+=======
+              href="/lovable-uploads/Ajay_Sreekumar_Resume.pdf"
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm font-medium hover:text-data-blue transition-colors"
             >

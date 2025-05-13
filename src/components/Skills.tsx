@@ -136,6 +136,7 @@ const Skills = () => {
         <div className="mt-6 p-3 bg-data-light/80 rounded-lg border border-data-blue/10 animate-fade-in" style={{ animationDelay: "1s" }}>
           <h3 className="text-xs font-semibold mb-2 text-data-blue">Additional Expertise</h3>
           <div className="flex flex-wrap gap-1.5 justify-center">
+<<<<<<< HEAD
             <span className="px-2 py-1 bg-white text-[11px] rounded-full border border-data-blue/20 shadow-sm hover:bg-data-light transition-colors">Data Visualization</span>
             <span className="px-2 py-1 bg-white text-[11px] rounded-full border border-data-blue/20 shadow-sm hover:bg-data-light transition-colors">Statistical Analysis</span>
             <span className="px-2 py-1 bg-white text-[11px] rounded-full border border-data-blue/20 shadow-sm hover:bg-data-light transition-colors">NLP</span>
@@ -146,6 +147,18 @@ const Skills = () => {
             <span className="px-2 py-1 bg-white text-[11px] rounded-full border border-data-blue/20 shadow-sm hover:bg-data-light transition-colors">ETL Pipelines</span>
             <span className="px-2 py-1 bg-white text-[11px] rounded-full border border-data-blue/20 shadow-sm hover:bg-data-light transition-colors">Data Engineering</span>
             <span className="px-2 py-1 bg-white text-[11px] rounded-full border border-data-blue/20 shadow-sm hover:bg-data-light transition-colors">Anomaly Detection</span>
+=======
+            <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[11px] rounded-full border border-data-blue/20 shadow-sm hover:bg-data-light transition-colors text-black dark:text-white">Data Visualization</span>
+            <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[11px] rounded-full border border-data-blue/20 shadow-sm hover:bg-data-light transition-colors text-black dark:text-white">Statistical Analysis</span>
+            <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[11px] rounded-full border border-data-blue/20 shadow-sm hover:bg-data-light transition-colors text-black dark:text-white">NLP</span>
+            <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[11px] rounded-full border border-data-blue/20 shadow-sm hover:bg-data-light transition-colors text-black dark:text-white">LLMOps</span>
+            <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[11px] rounded-full border border-data-blue/20 shadow-sm hover:bg-data-light transition-colors text-black dark:text-white">CI/CD</span>
+            <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[11px] rounded-full border border-data-blue/20 shadow-sm hover:bg-data-light transition-colors text-black dark:text-white">Deep Learning</span>
+            <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[11px] rounded-full border border-data-blue/20 shadow-sm hover:bg-data-light transition-colors text-black dark:text-white">Time Series Analysis</span>
+            <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[11px] rounded-full border border-data-blue/20 shadow-sm hover:bg-data-light transition-colors text-black dark:text-white">ETL Pipelines</span>
+            <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[11px] rounded-full border border-data-blue/20 shadow-sm hover:bg-data-light transition-colors text-black dark:text-white">Data Engineering</span>
+            <span className="px-2 py-1 bg-white dark:bg-gray-800 text-[11px] rounded-full border border-data-blue/20 shadow-sm hover:bg-data-light transition-colors text-black dark:text-white">Anomaly Detection</span>
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
           </div>
         </div>
       </div>

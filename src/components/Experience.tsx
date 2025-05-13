@@ -8,11 +8,19 @@ interface TimelineItem {
   description: string;
   achievements: string[];
   technologies: string[];
+<<<<<<< HEAD
+=======
+  logoUrl?: string;
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
 }
 
 const experiences: TimelineItem[] = [
   {
+<<<<<<< HEAD
     company: "University of Arizona | NASA JPL | BAE Systems",
+=======
+    company: "University of Arizona | NASA Jet Propulsion Laboratory | BAE Systems",
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
     role: "Machine Learning Researcher",
     period: "Jan 2025 - Present",
     description: "Built an AI Copilot using open-source LLMs and LangChain to enhance developer productivity and code quality.",
@@ -21,7 +29,12 @@ const experiences: TimelineItem[] = [
       "Reduced inference latency by 80% via optimized data pipelines and RAG integration",
       "Developed a VS Code plugin that boosted developer productivity by 30+ hours/month"
     ],
+<<<<<<< HEAD
     technologies: ["LangChain", "Python", "Sentence Transformers", "Tiktoken", "Pydantic", "Lark", "FastAPI", "Docker", "Git", "VS Code API"]
+=======
+    technologies: ["LangChain", "Python", "Sentence Transformers", "Tiktoken", "Pydantic", "Lark", "FastAPI", "Docker", "Git", "VS Code API"],
+    logoUrl: "/lovable-uploads/7f3a93c9-f007-4606-a745-d2c2dbebd44b.png"
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
   },
   {
     company: "Los Alamos National Laboratory",
@@ -33,10 +46,18 @@ const experiences: TimelineItem[] = [
       "Improved translation accuracy of Fortran-to-C++ by 42% using reinforcement learning",
       "Built ViT-based models for scientific forecasting; enhanced forecasting accuracy by 20%"
     ],
+<<<<<<< HEAD
     technologies: ["PyTorch", "TensorFlow", "Vision Transformers", "CodeBLEU", "NumPy", "pandas", "SQL", "t-SNE", "UMAP", "Git"]
   },
   {
     company: "Accenture (India)",
+=======
+    technologies: ["PyTorch", "TensorFlow", "Vision Transformers", "CodeBLEU", "NumPy", "pandas", "SQL", "t-SNE", "UMAP", "Git"],
+    logoUrl: "/lovable-uploads/3926183e-0908-4c50-9e55-408031bdb5e6.png"
+  },
+  {
+    company: "Accenture Technology",
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
     role: "Application Development Analyst",
     period: "Jun 2018 - Jun 2021",
     description: "Led data engineering and analytics solutions for Mondelez International to improve business operations.",
@@ -45,7 +66,12 @@ const experiences: TimelineItem[] = [
       "Built real-time streaming pipelines with Spark + Kafka + Azure Event Hubs",
       "Developed business dashboards with Tableau and AWS QuickSight, reducing reporting time by 90%"
     ],
+<<<<<<< HEAD
     technologies: ["Python", "PySpark", "Spark SQL", "Spark Streaming", "Kafka", "Azure Event Hubs", "SQL", "NLTK", "Tableau", "AWS QuickSight", "BigQuery", "Git"]
+=======
+    technologies: ["Python", "PySpark", "Spark SQL", "Spark Streaming", "Kafka", "Azure Event Hubs", "SQL", "NLTK", "Tableau", "AWS QuickSight", "BigQuery", "Git"],
+    logoUrl: "/lovable-uploads/55dd4af5-ea17-4614-a004-c52eaddc277a.png"
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
   }
 ];
 
@@ -59,6 +85,7 @@ const TimelineItem = ({ item, isLast }: { item: TimelineItem, isLast: boolean })
     
     {/* Timeline dot */}
     <div className="absolute top-0 left-0 w-6 h-6 rounded-full bg-data-blue -translate-x-1/2 flex items-center justify-center">
+<<<<<<< HEAD
       <div className="w-3 h-3 rounded-full bg-white"></div>
     </div>
     
@@ -66,6 +93,26 @@ const TimelineItem = ({ item, isLast }: { item: TimelineItem, isLast: boolean })
     <div className="bg-white rounded-lg p-6 border border-border shadow-sm">
       <div className="flex flex-wrap justify-between items-start mb-2">
         <h3 className="text-xl font-bold text-foreground">{item.company}</h3>
+=======
+      <div className="w-3 h-3 rounded-full bg-background"></div>
+    </div>
+    
+    {/* Content */}
+    <div className="bg-card rounded-lg p-6 border border-border shadow-sm">
+      <div className="flex flex-wrap md:flex-nowrap justify-between items-start mb-2">
+        <div className="flex items-center gap-3 mb-2 md:mb-0">
+          {item.logoUrl && (
+            <div className="w-8 h-8 md:w-10 md:h-10 flex-shrink-0">
+              <img 
+                src={item.logoUrl} 
+                alt={`${item.company} logo`}
+                className="w-full h-full object-contain"
+              />
+            </div>
+          )}
+          <h3 className="text-xl font-bold text-foreground">{item.company}</h3>
+        </div>
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
         <span className="text-sm text-muted-foreground bg-secondary px-2.5 py-1 rounded-full">{item.period}</span>
       </div>
       <h4 className="text-lg font-medium text-data-blue mb-3">{item.role}</h4>
@@ -95,7 +142,11 @@ const TimelineItem = ({ item, isLast }: { item: TimelineItem, isLast: boolean })
 
 const Experience = () => {
   return (
+<<<<<<< HEAD
     <section id="experience" className="py-16 bg-secondary/50">
+=======
+    <section id="experience" className="py-16 bg-secondary/30">
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
       <div className="section-container">
         <h2 className="section-title">Work Experience</h2>
         
@@ -109,7 +160,11 @@ const Experience = () => {
           ))}
         </div>
         
+<<<<<<< HEAD
         <div className="mt-12 bg-data-light p-6 rounded-lg border border-data-blue/10">
+=======
+        <div className="mt-12 bg-card p-6 rounded-lg border border-border">
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
           <h3 className="text-xl font-bold mb-2">Education</h3>
           <div className="space-y-4">
             <div className="flex flex-wrap justify-between items-start">
@@ -129,6 +184,10 @@ const Experience = () => {
                 <p className="text-muted-foreground">Electronics & Communications Engineering</p>
               </div>
               <div className="text-right">
+<<<<<<< HEAD
+=======
+                <p className="font-medium">GPA: 3.09/4.0</p>
+>>>>>>> 1f36983f5ea400c76f58f5216bf433352cb286fb
                 <p className="text-muted-foreground">2014 - 2018</p>
               </div>
             </div>
